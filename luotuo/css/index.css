@@ -105,7 +105,8 @@ img {
       height: .18rem; }
 
 .shop-goods {
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
   .shop-goods h3 {
     width: 100%;
     height: .47rem;
@@ -185,6 +186,120 @@ img {
     bottom: 0;
     right: 0;
     margin-right: .18rem; }
+
+.out-special h3 {
+  width: 100%;
+  height: .45rem;
+  text-indent: .16rem;
+  font-size: .18rem;
+  line-height: .45rem;
+  font-weight: 100;
+  background-color: #f4f3f3; }
+  .out-special h3 span {
+    float: right;
+    text-align: left;
+    font-size: .18rem;
+    color: #b7b6d8;
+    margin-right: .2rem; }
+
+.out-special div + div {
+  display: flex;
+  flex-flow: row wrap; }
+
+.man-shoes h3 {
+  width: 100%;
+  height: .45rem;
+  text-indent: .16rem;
+  font-size: .18rem;
+  line-height: .45rem;
+  font-weight: 100;
+  background-color: #f4f3f3; }
+  .man-shoes h3 span {
+    float: right;
+    text-align: left;
+    font-size: .18rem;
+    color: #b7b6d8;
+    margin-right: .2rem; }
+
+.man-shoes > div {
+  display: flex;
+  flex-flow: row nowrap;
+  background: #f4f3f3;
+  overflow-x: auto; }
+  .man-shoes > div > div {
+    width: 1.26rem;
+    height: 1.6rem;
+    background: #fff;
+    margin-right: .05rem; }
+    .man-shoes > div > div a {
+      display: block; }
+      .man-shoes > div > div a p {
+        font-size: .16rem;
+        color: #888888;
+        line-height: .16rem;
+        margin: .16rem .08rem;
+        width: 1rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
+      .man-shoes > div > div a div {
+        padding: .12rem; }
+        .man-shoes > div > div a div img {
+          width: 95%;
+          height: 95%; }
+
+.man-shoes > div::-webkit-scrollbar {
+  width: 0 !important; }
+
+.goods-pro {
+  width: 50%;
+  height: 2.78rem;
+  background: #ffff;
+  border-bottom: 1px solid #f4f4f3; }
+  .goods-pro a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-right: 1px solid #f4f4f3;
+    height: 100%; }
+    .goods-pro a div {
+      padding: .12rem; }
+      .goods-pro a div img {
+        width: 98%;
+        height: 95%; }
+    .goods-pro a div + p {
+      font-size: .18rem; }
+    .goods-pro a div + p + p {
+      color: red;
+      font-size: .15rem;
+      font-weight: 500;
+      margin: .05rem 0 0.08rem 0; }
+    .goods-pro a div + p + p + p {
+      font-size: .12rem; }
+      .goods-pro a div + p + p + p span {
+        font-size: .12rem;
+        border: 1px solid #d7d7d7;
+        background: #ededed;
+        color: #b4b4b4;
+        margin-right: .04rem; }
+      .goods-pro a div + p + p + p span + span {
+        font-size: .12rem;
+        border: 1px solid #e03045;
+        background: #fff;
+        color: #e03045; }
+
+.company {
+  height: .5rem;
+  padding-top: 0.15rem;
+  background: #f4f3f3; }
+  .company p > a {
+    color: #666666; }
+  .company p {
+    text-align: center;
+    font-size: .12rem;
+    color: #666666;
+    line-height: .12rem; }
 
 .footer {
   width: 100%;

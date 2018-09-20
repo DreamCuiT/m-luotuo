@@ -1,0 +1,79 @@
+.goods-sort {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center; }
+  .goods-sort ul {
+    width: 22vw;
+    height: 100%;
+    list-style: none;
+    border-right: 1px solid #eeeeee; }
+    .goods-sort ul > li {
+      height: .21rem;
+      margin-top: .2rem;
+      text-align: center;
+      line-height: .21rem;
+      color: #333333;
+      font-size: .14rem; }
+    .goods-sort ul > li:hover {
+      color: #ab2b2b;
+      font-size: .16rem; }
+  .goods-sort div {
+    flex: 1; }
+    .goods-sort div div {
+      overflow: hidden;
+      height: .2rem;
+      display: flex;
+      justify-content: center;
+      margin-top: .2rem;
+      margin-bottom: .25rem; }
+      .goods-sort div div span {
+        vertical-align: top;
+        position: relative;
+        float: left;
+        font-size: .12rem;
+        margin: 0 auto;
+        color: #000; }
+      .goods-sort div div span:before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: -.33rem;
+        margin: auto;
+        height: 1px;
+        width: .2rem;
+        background-color: #d9d9d9; }
+      .goods-sort div div span:after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: .66rem;
+        margin: auto;
+        height: 1px;
+        width: .2rem;
+        background-color: #d9d9d9; }
+  .goods-sort .goods-sort-image-text ul {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    .goods-sort .goods-sort-image-text ul li {
+      height: auto;
+      width: 33.33%;
+      margin: 0;
+      padding: 0; }
+      .goods-sort .goods-sort-image-text ul li a {
+        display: block;
+        text-align: center; }
+        .goods-sort .goods-sort-image-text ul li a span {
+          color: #7d6666;
+          font-size: .12rem; }

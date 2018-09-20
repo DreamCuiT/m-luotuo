@@ -1,0 +1,95 @@
+.goods-sort{
+    width:100%;
+    height:100%;    
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    ul{ 
+        width:22vw;
+        height:100%;
+        list-style:none;
+        border-right:1px solid #eeeeee;
+        &>li{
+            height:.21rem;
+            margin-top:.2rem;
+            text-align:center;
+            line-height:.21rem;
+            color:#333333;
+            font-size:.14rem;
+        }
+        &>li:hover{
+            color:#ab2b2b;
+            font-size:.16rem;
+        }
+    }
+    div{
+        flex:1;
+        div{
+            overflow: hidden;
+            height:.2rem;
+            display:flex;
+            justify-content: center;
+            margin-top:.2rem;
+            margin-bottom:.25rem;
+            span{
+                vertical-align: top;
+                position:relative;
+                float: left;
+                font-size:.12rem;
+                margin:0 auto;
+                color:#000;
+            }
+           span:before{
+                display: block;
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                left:-.33rem;
+                margin: auto;
+                height: 1px;
+                width: .2rem;
+                background-color: #d9d9d9;
+
+            }
+            span:after{
+                display: block;
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                left:.66rem;
+                margin: auto;
+                height: 1px;
+                width: .2rem;
+                background-color: #d9d9d9;
+            }
+        }
+    }
+    .goods-sort-image-text{
+        ul{
+            height:auto;
+            width:auto;
+            margin:0;
+            padding:0;
+            display:flex;
+            flex-flow:row wrap;
+            justify-content: center;
+            align-items:center;
+            li{
+                height:auto;
+                width:33.33%;
+                margin:0;
+                padding:0;
+                a{
+                    display:block;
+                    text-align:center;
+                    span{
+                        color:#7d6666;
+                        font-size:.12rem;
+                    }
+                }
+            }
+        }
+    }
+}
