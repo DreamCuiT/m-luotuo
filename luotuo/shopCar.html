@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>骆驼官方商城</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/shopCar.css">    
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header"></div>
+    <!-- main -->
+    <div class="main">
+       <div class="flex-box">
+            <div class="shopCar-tit">
+                    <div><span>骆驼自营爆品</span></div>
+                    <div><span>7天无忧退换货</span></div>
+                    <div><span>满59包邮</span></div>
+                </div>
+            <div class="goods-lis">
+                <table>
+                    <tr>
+                        <td rowspan="2"><span></span></td>
+                        <td><img src="img/100.jpg" alt=""></td>
+                        <td>
+                            <h2>骆驼高回弹轻暖羽绒服</h2>
+                            <p>
+                                <b>灰色</b>*
+                                <b>L(175/92A)</b>
+                            </p>
+                            <div>
+                                <span>
+                                    <i>-</i>
+                                    <i>0</i>
+                                    <i>+</i>
+                                </span>
+                                <i>￥</i>
+                                <i>298.00</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span>删除</span></td>
+                    </tr>
+                </table>
+            </div>           
+       </div>
+       <div class="all-money">
+          <div><span></span>全选</div>
+          <div>
+              <p>合计:￥<span>0.00</span> </p>
+              <p><span>总额￥</span><i>0.00</i><span>已优惠:￥</span><i>0</i></p>
+          </div>
+          <div>去结算</div>
+       </div>
+    </div>
+    <!-- footer -->
+    <div class="footer"></div>
+</body>
+<script src="js/shopCar.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/iconfont.js"></script>
+<script>
+    $(function(){
+        $(".header").load("header.html")
+        $(".footer").load("footer.html")
+    })
+</script>
+</html>

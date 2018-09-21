@@ -1,0 +1,67 @@
+.header-left {
+  background: url(../img/left.png) no-repeat center; }
+
+.login-form {
+  flex: 1;
+  background: #fff;
+  padding: .45rem .2rem 0; }
+  .login-form form div {
+    position: relative;
+    border: 0;
+    font-size: 0;
+    display: flex;
+    align-items: center; }
+    .login-form form div input {
+      height: .46rem;
+      width: 100%;
+      outline: 0;
+      border: 0;
+      font-size: .155rem;
+      border-bottom: 1px solid #d9d9d9;
+      border-radius: .04rem; }
+    .login-form form div p {
+      position: absolute;
+      right: 0;
+      height: .19rem;
+      width: .16rem;
+      background: url(../img/btn-close.png) no-repeat center; }
+  .login-form div + div + div input {
+    margin-top: .19rem;
+    height: .46rem;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    font-size: .155rem;
+    border: 1px solid #c3a851;
+    border-radius: .04rem;
+    color: #c3a851;
+    text-align: center; }
+  .login-form p {
+    line-height: .4rem;
+    font-size: .12rem;
+    color: #999999;
+    display: flex;
+    justify-content: space-between; }
+
+.enjoy {
+  display: flex;
+  justify-content: space-around;
+  margin-top: .5rem; }
+  .enjoy p i {
+    color: #309bdf;
+    font-size: .18rem; }
+  .enjoy p span {
+    margin-left: .07rem;
+    color: #666666; }
+  .enjoy p + p i {
+    font-size: .24rem;
+    color: #00a0e9; }
+  .enjoy p + p span {
+    margin-left: .07rem;
+    color: #666666; }
+  .enjoy p + p + p i {
+    font-size: .24rem;
+    color: #df3031; }
+  .enjoy p + p + p span {
+    margin-left: .07rem;
+    color: #666666; }

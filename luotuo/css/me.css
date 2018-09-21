@@ -1,5 +1,6 @@
 .user {
-  flex: 1; }
+  flex: 1;
+  overflow: auto; }
 
 .user-head {
   width: 100%;
@@ -20,8 +21,10 @@
     font-weight: 500; }
 
 .my-indent p {
+  margin-top: .08rem;
   padding: 0 .15rem;
-  font-size: .12rem;
+  font-size: .14rem;
+  font-weight: 100;
   background: #fff;
   height: .44rem;
   border-top: 1px solid #ececec;
@@ -33,7 +36,9 @@
     color: #939393; }
 
 .my-indent ul {
-  padding: 0 .15rem; }
+  padding: 0 .15rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec; }
   .my-indent ul > li {
     font-size: .12rem;
     display: flex;
@@ -48,4 +53,13 @@
       height: auto;
       color: #939393; }
       .my-indent ul > li a span {
-        font-size: .12rem; }
+        font-weight: 100;
+        font-size: .14rem;
+        line-height: .24rem; }
+        .my-indent ul > li a span i {
+          font-size: .3rem;
+          color: #4f5a60; }
+        .my-indent ul > li a span span {
+          display: inline-block;
+          margin-top: .03rem;
+          vertical-align: top; }

@@ -1,0 +1,166 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+
+.shopCar-tit {
+  height: .44rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 .2rem; }
+  .shopCar-tit div {
+    font-size: 0;
+    position: relative; }
+    .shopCar-tit div span {
+      font-size: .12rem;
+      color: #9b9b9b; }
+  .shopCar-tit > div:before {
+    content: "";
+    display: block;
+    border: .01rem solid #9b9b9b;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -.1rem; }
+
+.goods-lis {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  background: #fff; }
+  .goods-lis table {
+    border-collapse: collapse; }
+    .goods-lis table tr td {
+      width: .2rem;
+      height: .2rem;
+      border-radius: 50%;
+      text-align: center; }
+      .goods-lis table tr td span {
+        display: block;
+        width: .2rem;
+        height: .2rem;
+        border: 1px solid #c7c7c7;
+        border-radius: 50%;
+        margin: 0 .12rem; }
+    .goods-lis table tr td + td img {
+      margin-top: .1rem;
+      width: .72rem;
+      height: .72rem;
+      margin-right: .1rem; }
+    .goods-lis table tr td + td + td {
+      width: auto;
+      text-align: left; }
+      .goods-lis table tr td + td + td h2 {
+        margin-top: .06rem;
+        font-weight: 100;
+        color: #9b9b9b;
+        font-size: .14rem; }
+      .goods-lis table tr td + td + td p {
+        font-size: .12rem;
+        color: #cdcdcd;
+        line-height: .26rem; }
+        .goods-lis table tr td + td + td p b {
+          font-weight: 100; }
+      .goods-lis table tr td + td + td div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: .16rem;
+        color: #000; }
+        .goods-lis table tr td + td + td div span {
+          margin-left: 0;
+          border: 1px solid #cacaca;
+          border-radius: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 1rem;
+          height: .29rem;
+          text-align: center; }
+        .goods-lis table tr td + td + td div i {
+          font-style: normal;
+          flex: 1; }
+    .goods-lis table tr + tr {
+      height: .16rem; }
+      .goods-lis table tr + tr td {
+        border: 0; }
+        .goods-lis table tr + tr td span {
+          margin-top: .1rem;
+          width: .94rem;
+          height: .2rem;
+          background-color: #d24444;
+          color: #fff;
+          border-radius: 0;
+          font-size: .16rem;
+          opacity: 0.6;
+          margin-left: 0; }
+
+.all-money {
+  font-size: 0;
+  background: #fff;
+  position: fixed;
+  bottom: .55rem;
+  height: .5rem;
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .all-money div {
+    font-size: .14rem;
+    padding: 0 0 0 .1rem; }
+    .all-money div span {
+      display: inline-block;
+      width: .2rem;
+      height: .2rem;
+      border: 1px solid #c7c7c7;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: .08rem; }
+  .all-money div + div {
+    padding-left: .34rem;
+    padding-right: .5rem; }
+    .all-money div + div p {
+      color: #ea7d51;
+      font-size: .14rem; }
+      .all-money div + div p span {
+        display: inline-block;
+        border: 0;
+        margin: 0; }
+      .all-money div + div p i {
+        font-style: normal;
+        display: inline-block; }
+    .all-money div + div p + p {
+      color: #000;
+      font-size: .12rem;
+      display: flex;
+      justify-content: space-around; }
+      .all-money div + div p + p span {
+        width: auto;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+        margin: 0; }
+      .all-money div + div p + p i {
+        font-style: normal;
+        display: inline-block;
+        font-size: .12rem;
+        margin-right: .05rem; }
+      .all-money div + div p + p i + span {
+        color: #c8c8c8; }
+      .all-money div + div p + p i + span + i {
+        color: #c8c8c8; }
+  .all-money div + div + div {
+    width: .92rem;
+    height: .44rem;
+    color: #f8f2e2;
+    font-size: .14rem;
+    background-color: #d5b04f;
+    text-align: center;
+    line-height: .44rem;
+    border-radius: .02rem;
+    padding: 0; }
