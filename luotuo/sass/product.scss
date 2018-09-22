@@ -89,9 +89,15 @@ img{
     overflow:auto;
 }
 .goods-img{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x: auto;
+    margin-bottom: -17px;
     img{
         width:100%;
+        height:100%;
     }
+    &::-webkit-scrollbar { width: 0 !important }
 }
 .goods-mgs{
     padding:.1rem 0;
@@ -100,38 +106,167 @@ img{
     display:flex;
     justify-content: space-between;
     &>div{
-        flex:1;
+       width:76vw;
+       border-right:1px solid #ededed;
+       p{
+            padding:.05rem .1rem;
+       }
+       p+p{
+            padding:.05rem .1rem;
+            font-size:.18rem;
+            color:#4a4a4a;
+       }
+       p+p+p{
+            padding:.05rem .1rem;
+            font-size:.18rem;
+            color:#ea7d51;
+            font-weight:600;
+       }
     }
     div+div{
+        flex:1;
         width:.9rem;
         height:.94rem;
         flex-basis:.9rem;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: .22rem;
+            color:#646464;
+        }
+        span{
+            margin-top:.1rem;
+            font-size:.12rem;
+            color:#cccccc;
+        }
     }
+}
+.shopCar-tit{
+    height: .44rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 .2rem;
+    div{
+        font-size:0;
+        position: relative;
+        span{
+            font-size:.12rem;
+            color:#9b9b9b;
+        }
+    }
+    &>div:before{
+        content:"";
+        display:block;
+        border:.01rem solid #9b9b9b;
+        width:0;
+        height:0;
+        position: absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+        left:-.1rem;
+    }
+}
+.goods-size{
+        margin-bottom:.05rem;
+        padding:0 .2rem;
+        background-color:#fff;
+        border-top:1px solid #eaeaea;
+        border-bottom:1px solid #eaeaea;
+    p{  
+        display:flex;
+        justify-content: space-between;
+        padding:.12rem 0;
+        font-size:.14rem;
+        color:#333;
+        background-color:#fff;
+      
+        a{
+            font-size:.14rem;
+            color:#333;
+            span{
+                color:#cccccc;
+                font-size:.1rem;
+            }
+        }
+        a+span{
+            font-size: .14rem;
+            color: rgba(74,74,74,.6);
+        }
+    }
+}
+.evaluate-box{
+    border-bottom:1px solid #ececec;
+}
+.goods-img-pro{
+    margin-top:.08rem;
+    img{
+        display:block;
+        width:100%;
+    }
+}
+// gotop
+.gotop{
+    width:.4rem;
+    height:.4rem;
+    position:fixed;
+    right:.12rem;
+    bottom:.6rem;
+    width:.39rem;
+    border:1px solid #cdcdcb;
+    background: #fff;
+    border-radius:50%;
+    opacity: .9;
+    z-index: 5;
+    font-size:.2rem;
+    text-align:center;
+    line-height:.4rem;
 }
 // footer
 .footer{
-    // width:100%;
-    // height:.55rem;
-    // border-top:1px solid #efefef;
-    // background-color:#fafafa;
-    // display: flex;
-    // & > a{
-    //     text-align:center;
-    //     display: flex;
-    //     flex-direction:column;
-    //     justify-content: center;
-    //     width:20%;
-    //     height:.55rem;
-    //     color:#696969;
-    //     i{
-    //         font-size:.24rem;
-    //         font-weight:500;
-    //         margin:0 0 .04rem 0;
-    //     }
-    //     span{
-    //         font-size: .12rem;
-    //     }
-    // }
+    height:.44rem;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    padding:.03rem .03rem;
+    a{
+        font-size:.12rem;
+        text-align:center;
+        line-height:.45rem;
+        width:.5rem;
+        height:.45rem;
+        color:#7b7b7b;  
+        i{
+            font-size:.24rem;
+            font-weight:500;
+            margin:0 0 .04rem 0;
+        }    
+    }
+    a+a{
+        width:1.58rem;
+        height:.45rem;
+        text-align:center;
+        line-height:.45rem;
+        background-color:#9c937a;
+        margin:0 .03rem;
+        color:#fff;
+        border-radius:.02rem;
+    }
+    a+a+a{
+        width:1.57rem;
+        height:.45rem;
+        text-align:center;
+        line-height:.45rem;
+        background-color:#d2ab44;
+        color:#fff;
+        border-radius:.02rem;
+    }
+    & > a{
+        text-align:center;
+    }
 }
 .header-left{
     width:.36rem;

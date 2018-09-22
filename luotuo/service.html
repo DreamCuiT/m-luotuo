@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>骆驼官方商城</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/service.css">    
+    <link rel="stylesheet" href="css/iconfont-kf.css">
+    <link rel="shortcut icon" href="https://img02.camel.com.cn/image/favicon.ico">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <h2>北京骆驼鞋业有限公司</h2>
+        <p><a>评价</a></p>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="xiaoming">
+            <h2>小明为您服务</h2>
+        </div>
+        <div class="date">
+            <span></span>
+        </div>
+        <div class="autotext">
+            <img src="img/luotuo.png" alt="">
+            <div></div>
+            <div>
+               <p>您好，请问有什么可以帮到亲的呢！</p>
+            </div>
+        </div>
+        <div class="usertext">
+            <span></span>
+            <div>
+                <p>您好，请问有什么可以帮到亲的呢！</p>
+            </div>
+            <div></div>
+            <img src="img/luotuo.png" alt="">
+            </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <i class="iconfont icon-biaoqing"></i>
+        </div>
+        <div>
+            <i class="iconfont icon-xiangji"></i>
+        </div>
+    </div>
+</body>
+<script src="js/service.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/iconfont.js"></script>
+<script>
+    $(function(){
+        let date = new Date();
+        console.log(date);
+        let str = date.getHours()+":"+date.getMinutes();
+        $(".date>span").text(str);
+    })
+</script>
+</html>

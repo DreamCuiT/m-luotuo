@@ -15,6 +15,8 @@
     border-radius: 50%;
     margin-left: .2rem;
     margin-right: .2rem; }
+  .user-head a {
+    color: #fff; }
   .user-head span {
     font-size: .19rem;
     color: #fff;
